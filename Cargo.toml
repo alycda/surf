@@ -20,6 +20,7 @@ edition = "2018"
 # when the default feature set is updated, verify that the `--features` flags in
 # `.github/workflows/ci.yaml` are updated accordingly
 default = ["curl-client", "middleware-logger", "encoding"]
+docs = []
 curl-client = ["http-client/curl_client", "once_cell", "default-client"]
 h1-client = [
     "http-client/h1_client",
