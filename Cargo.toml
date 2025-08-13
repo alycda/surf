@@ -78,6 +78,9 @@ async-native-tls = { version = "0.3.3", optional = true }
 
 web-sys = { optional = true, version = "0.3.25", features = ["TextDecoder"] }
 
+[patch.crates-io]
+http-types = { git = "https://github.com/http-rs/http-types", branch = "main" }
+rand = { git = "https://github.com/rust-random/rand", tag = "0.8.0" }
 
 [dev-dependencies]
 async-std = { version = "1.6.0", features = ["attributes"] }
